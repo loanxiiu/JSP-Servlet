@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập vào tên của bạn: <input type="text" id="name" onkeypress="changeText()">
+<p id="output"></p>
+
+<script language="JavaScript">
+    function changeText(){
+        var name = document.getElementById("name");
+        var output = document.getElementById("output");
+        output.innerHTML = "Xin chào: " + name.value;
+    }
+</script>
+</body>
+</html>

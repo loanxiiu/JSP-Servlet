@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div style="background-color: plum" id="my_div">
+  Loan xinh iu
+  <hr/>
+  Loan phai gioi
+  <hr/>
+  Loan phai giau
+</div>
+<button onclick="hidden_div()">Ẩn</button>
+
+<script>
+  var check = "hidden";
+  function hidden_div(){
+    var my_div = document.getElementById("my_div");
+    if(check== "hidden"){
+      my_div.style.display = "none";
+      check="show";
+    }
+    else {
+      my_div.style.display = "block";
+      check="hidden"
+    }
+  }
+
+</script>
+</body>
+</html>

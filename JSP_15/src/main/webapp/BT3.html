@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="background-color: plum" id="my_div" onmouseover="changeColorViolet()" onmouseleave="changeColorPlum()">
+    Loan xinh iu
+    <hr/>
+    Loan phai gioi
+    <hr/>
+    Loan phai giau
+</div>
+
+<script>
+    function changeColorViolet(){
+        var my_div = document.getElementById("my_div");
+        my_div.style = "background-color: violet";
+    }
+    function changeColorPlum(){
+        var my_div = document.getElementById("my_div");
+        my_div.style = "background-color: plum";
+    }
+</script>
+</body>
+</html>
